@@ -1,7 +1,7 @@
 export CUDA_HOME=/usr/local/cuda
 export DYLD_LIBRARY_PATH=/opt/intel/lib:/opt/intel/mkl/lib:/usr/local/cuda/lib
 export EDITOR=/usr/bin/vi
-export HOMEBREW_GITHUB_API_TOKEN=d23f67077cbb2ea2a92ea301e36081539efd3f00
+export HOMEBREW_GITHUB_API_TOKEN="$(cat ~/.zsh/homebrew_github_api_token)"
 export LESS=-r
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export NVBLAS_CONFIG_FILE=/Users/kat/.nvblas.conf
