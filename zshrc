@@ -19,6 +19,18 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' verbose yes
 zstyle ':completion::approximate*:*' prefix-needed false
 
+# set terminal title
+chpwd() {
+  [[ -t 1 ]] || return
+  case $TERM in
+    sun-cmd) print -Pn "\e]l%~\e\\"
+      ;;
+    *xterm*|rxvt|(dt|k|E)term) print -Pn "\e]2;%~\a"
+      ;;
+  esac
+}
+chpwd
+
 # help (homebrew location)
 unalias run-help
 autoload run-help
