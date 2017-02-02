@@ -1,0 +1,43 @@
+# path
+# path=(~/anaconda3/bin $path)
+path=(~/.local/bin /usr/local/cuda/bin ~/.gem/ruby/2.0.0/bin $path)
+
+# options
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+setopt auto_cd auto_pushd hist_ignore_dups notify share_history
+bindkey -e
+
+# completion
+fpath=(/usr/local/share/zsh-completions $fpath)
+autoload -Uz compinit
+compinit
+zstyle ':completion:::::' completer _complete _approximate
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' menu select
+zstyle ':completion:*' verbose yes
+zstyle ':completion::approximate*:*' prefix-needed false
+
+# help (homebrew location)
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help
+
+# plugins
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-git-prompt/zshrc.sh
+source ~/.zsh/irc_like_input.zsh
+
+# key bindings
+bindkey "^[^[[D" backward-word
+bindkey "^[^[[C" forward-word
+
+# customizations
+alias ls='ls -G'
+
+# prompt
+PS1='%n@%m:%~%# '
+RPROMPT='$(git_super_status)'
+
+source ~/Library/torch/install/bin/torch-activate
