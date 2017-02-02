@@ -6,7 +6,7 @@ path=(~/.local/bin /usr/local/cuda/bin ~/.gem/ruby/2.0.0/bin $path)
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
-setopt auto_cd auto_pushd hist_ignore_dups notify share_history
+setopt auto_cd auto_pushd extended_history hist_ignore_dups notify share_history
 bindkey -e
 
 # completion
