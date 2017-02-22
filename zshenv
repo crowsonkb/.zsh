@@ -7,5 +7,5 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export NVBLAS_CONFIG_FILE=/Users/kat/.nvblas.conf
 export PAGER=/usr/bin/less
 # export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=cpp
-export TORCH_DATA_PATH=/Users/kat/Library/torch/dp/
+export TORCH_DATA_PATH=/Users/kat/torch/dp
 export VISUAL='/usr/local/bin/atom --new-window --wait'

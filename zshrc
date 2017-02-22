@@ -52,4 +52,4 @@ alias ls='ls -G'
 PS1='%n@%m:%~%# '
 RPROMPT='$(git_super_status)'
 
-source ~/Library/torch/install/bin/torch-activate
+source ~/torch/install/bin/torch-activate
