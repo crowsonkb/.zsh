@@ -13,11 +13,10 @@ bindkey -e
 fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -Uz compinit
 compinit
-zstyle ':completion:::::' completer _complete _approximate
+zstyle ':completion:::::' completer _complete
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' menu select
 zstyle ':completion:*' verbose yes
-zstyle ':completion::approximate*:*' prefix-needed false
 
 # set terminal title
 chpwd() {
