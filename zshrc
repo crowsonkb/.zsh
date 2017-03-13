@@ -21,12 +21,7 @@ zstyle ':completion:*' verbose yes
 # set terminal title
 chpwd() {
   [[ -t 1 ]] || return
-  case $TERM in
-    sun-cmd) print -Pn "\e]l%~\e\\"
-      ;;
-    *xterm*|rxvt|(dt|k|E)term) print -Pn "\e]2;%~\a"
-      ;;
-  esac
+  print -Pn "\e]2;%~\a"
 }
 chpwd
 
@@ -60,3 +55,6 @@ if [ -f '/Users/kat/.local/opt/google-cloud-sdk/path.zsh.inc' ]; then source '/U
 if [ -f '/Users/kat/.local/opt/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/kat/.local/opt/google-cloud-sdk/completion.zsh.inc'; fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Syntax highlighting
+# source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
