@@ -56,5 +56,6 @@ if [ -f '/Users/kat/.local/opt/google-cloud-sdk/completion.zsh.inc' ]; then sour
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Syntax highlighting
+# These plugins must come near/at the end of .zshrc
 # source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autoenv/autoenv.zsh
