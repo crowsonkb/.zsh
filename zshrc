@@ -39,6 +39,7 @@ source ~/.zsh/irc_like_input.zsh
 # key bindings
 bindkey "^[^[[D" backward-word
 bindkey "^[^[[C" forward-word
+bindkey "^I" expand-or-complete-prefix
 
 # customizations
 alias ls='ls -G'
