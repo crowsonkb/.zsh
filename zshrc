@@ -11,6 +11,7 @@ bindkey -e
 
 # completion
 fpath=(/usr/local/share/zsh-completions $fpath)
+source <(npm completion)
 autoload -Uz compinit
 compinit
 zstyle ':completion:::::' completer _complete
