@@ -1,10 +1,8 @@
-export CUDA_HOME=/usr/local/cuda
-export DYLD_LIBRARY_PATH=/opt/intel/lib:/opt/intel/mkl/lib:/usr/local/cuda/lib
+export DYLD_LIBRARY_PATH=/opt/intel/lib:/opt/intel/mkl/lib
 export EDITOR=/usr/bin/vi
 export HOMEBREW_GITHUB_API_TOKEN="$(cat ~/.zsh/homebrew_github_api_token)"
 export LESS=-r
 export LSCOLORS=ExFxBxDxCxegedabagacad
-export NVBLAS_CONFIG_FILE=/Users/kat/.nvblas.conf
 export PAGER=/usr/bin/less
 # export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=cpp
 export TORCH_DATA_PATH=/Users/kat/torch/dp

@@ -1,6 +1,6 @@
 # path
 # path=(~/anaconda3/bin $path)
-path=(~/.local/bin /usr/local/cuda/bin ~/.gem/ruby/2.3.0/bin $path)
+path=(~/.local/bin ~/.gem/ruby/2.3.0/bin $path)
 
 # options
 HISTFILE=~/.histfile
