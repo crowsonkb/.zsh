@@ -4,8 +4,8 @@ path=(~/.local/bin ~/.gem/ruby/2.3.0/bin $path)
 
 # options
 HISTFILE=~/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=50000
+SAVEHIST=50000
 setopt auto_pushd extended_history hist_ignore_dups notify share_history
 bindkey -e
 
