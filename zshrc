@@ -11,7 +11,7 @@ bindkey -e
 
 # completion
 fpath=(/usr/local/share/zsh-completions $fpath)
-source <(npm completion)
+# source <(npm completion)
 autoload -Uz compinit
 compinit
 zstyle ':completion:::::' completer _complete
@@ -48,7 +48,7 @@ alias ls='ls -G'
 PS1='%n@%m:%~%# '
 RPROMPT='$(git_super_status)'
 
-source ~/torch/install/bin/torch-activate
+# source ~/torch/install/bin/torch-activate
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/kat/.local/opt/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/kat/.local/opt/google-cloud-sdk/path.zsh.inc'; fi
