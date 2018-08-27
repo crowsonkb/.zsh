@@ -6,7 +6,7 @@ path=(~/.local/bin ~/.gem/ruby/2.3.0/bin $path)
 HISTFILE=~/.histfile
 HISTSIZE=50000
 SAVEHIST=50000
-setopt auto_pushd extended_history hist_ignore_dups notify share_history
+setopt auto_pushd extended_history hist_ignore_dups interactivecomments notify share_history
 bindkey -e
 
 # completion
@@ -59,5 +59,6 @@ if [ -f '/Users/kat/.local/opt/google-cloud-sdk/completion.zsh.inc' ]; then sour
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # These plugins must come near/at the end of .zshrc
-# source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/highlight_style.zsh
 source ~/.zsh/zsh-autoenv/autoenv.zsh
