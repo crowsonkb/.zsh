@@ -1,9 +1,13 @@
 # Modified from Atom's 'One Light' style.
 
+export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main pattern)
+
+
+# main highlighter. See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
+
 unset ZSH_HIGHLIGHT_STYLES
 typeset -A ZSH_HIGHLIGHT_STYLES
 
-# main highlighter. See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=9,bold'
 ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=5,bold'
 ZSH_HIGHLIGHT_STYLES[command]='fg=4'
@@ -41,3 +45,16 @@ ZSH_HIGHLIGHT_STYLES[arg0]='fg=4'
 ZSH_HIGHLIGHT_STYLES[default]=''
 
 export ZSH_HIGHLIGHT_STYLES
+
+
+# pattern highlighter. See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/pattern.md
+
+unset ZSH_HIGHLIGHT_PATTERNS
+typeset -A ZSH_HIGHLIGHT_PATTERNS
+
+ZSH_HIGHLIGHT_PATTERNS+=('~' 'fg=6')
+ZSH_HIGHLIGHT_PATTERNS+=(';' 'fg=6')
+ZSH_HIGHLIGHT_PATTERNS+=('$[[:IDENT:]]##' 'fg=9')
+ZSH_HIGHLIGHT_PATTERNS+=('${[[:IDENT:]]##}' 'fg=9')
+
+export ZSH_HIGHLIGHT_PATTERNS
