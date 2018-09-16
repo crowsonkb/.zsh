@@ -17,6 +17,7 @@ compinit
 zstyle ':completion:::::' completer _complete
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' menu select
+zstyle ':completion:*' rehash true
 zstyle ':completion:*' verbose yes
 
 # set terminal title
