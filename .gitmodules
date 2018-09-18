@@ -3,7 +3,7 @@
 	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule "zsh-git-prompt"]
 	path = zsh-git-prompt
-	url = https://github.com/olivierverdier/zsh-git-prompt
+	url = https://github.com/starcraftman/zsh-git-prompt
 [submodule "zsh-syntax-highlighting"]
 	path = zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
