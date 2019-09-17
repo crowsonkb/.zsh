@@ -44,6 +44,7 @@ bindkey "^I" expand-or-complete-prefix
 
 # customizations
 alias ls='ls -G'
+alias swift='PATH=/usr/bin:"$PATH" swift'  # fix path to python 2
 
 # prompt
 PS1='%n@%m:%~%# '
